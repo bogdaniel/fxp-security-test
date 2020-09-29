@@ -1,0 +1,60 @@
+fxp_security:
+  doctrine:
+    orm:
+      listeners:
+        permission_checker: false # TODO: enable
+      object_filter_voter: true
+  security_voter:
+    group: true
+    allow_not_managed_subject: false
+  organizational_context:
+    enabled: true
+
+  default_permissions:
+    fields:
+      id:               [read]
+      createdAt:        [read]
+      updatedAt:        [read]
+    master_mapping_permissions:
+      view:             read
+      update:           edit
+      create:           edit
+      delete:           edit
+
+#fxp_security:
+#  doctrine:
+#    orm:
+#      listeners:
+#        permission_checker: false
+#  security_voter:
+#    allow_not_managed_subject: true
+#    role: true
+#    group: false
+#  expression:
+#    override_voter:       true
+#    functions:
+#      is_basic_auth:        true
+#      is_granted:           true
+#      is_organization:      false
+#  default_permissions:
+#    fields:
+#      id:               [read]
+#      createdAt:        [read]
+#      updatedAt:        [read]
+#    master_mapping_permissions:
+#      view:             read
+#      update:           edit
+#      create:           edit
+#      delete:           edit
+#  permissions:
+#    App\Entity\User:
+#      operations:       [view, create, update, delete]
+#      fields:
+#        username:     [read, edit]
+#        email:        [read, edit]
+#        roles:        [read]
+#    App\Entity\Post:
+#      operations:       [view, create, update, delete]
+#      fields:
+#        name: [read, edit]
+#        content: [read, edit]#

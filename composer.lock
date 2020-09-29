@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6c955a54722d095fab8525b86a73d9f",
+    "content-hash": "8b743d4751ef430674f3344ef6b4760d",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1573,6 +1573,274 @@
                 "rest"
             ],
             "time": "2020-04-27T06:40:36+00:00"
+        },
+        {
+            "name": "fxp/config",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/fxp-config.git",
+                "reference": "6cc549beb8542afe2a6dc8d6a471473981005450"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/fxp-config/zipball/6cc549beb8542afe2a6dc8d6a471473981005450",
+                "reference": "6cc549beb8542afe2a6dc8d6a471473981005450",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "^1.6.0",
+                "php": "^7.1.0",
+                "symfony/config": "^4.3.0",
+                "symfony/finder": "^4.3.0"
+            },
+            "require-dev": {
+                "fxp/doctrine-extra": "^2.0.0",
+                "symfony/http-kernel": "^4.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fxp\\Component\\Config\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "Extra features of Symfony Config",
+            "homepage": "https://github.com/fxpio/fxp-config",
+            "keywords": [
+                "annotation",
+                "config",
+                "loader"
+            ],
+            "abandoned": true,
+            "time": "2019-08-02T07:36:05+00:00"
+        },
+        {
+            "name": "fxp/doctrine-extra",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/fxp-doctrine-extra.git",
+                "reference": "d0be35318a9f59e7281e7bd645991128fb3b732a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/fxp-doctrine-extra/zipball/d0be35318a9f59e7281e7bd645991128fb3b732a",
+                "reference": "d0be35318a9f59e7281e7bd645991128fb3b732a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/persistence": "^1.0.0",
+                "php": "^7.1.0"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fxp\\Component\\DoctrineExtra\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "Utils for Doctrine",
+            "homepage": "https://github.com/fxpio/fxp-doctrine-extra",
+            "keywords": [
+                "class",
+                "common",
+                "doctrine",
+                "utils"
+            ],
+            "abandoned": true,
+            "time": "2019-05-09T12:59:39+00:00"
+        },
+        {
+            "name": "fxp/security",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/fxp-security.git",
+                "reference": "b44196fb0e40dceed6a1b3f2f2c8ec60e4bb8e12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/fxp-security/zipball/b44196fb0e40dceed6a1b3f2f2c8ec60e4bb8e12",
+                "reference": "b44196fb0e40dceed6a1b3f2f2c8ec60e4bb8e12",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "^1.5.0",
+                "doctrine/event-manager": "^1.0.0",
+                "doctrine/persistence": "^1.0.0",
+                "fxp/config": "^2.0.0",
+                "fxp/doctrine-extra": "^2.0.0",
+                "php": "^7.1.0",
+                "psr/cache": "^1.0.0",
+                "symfony/event-dispatcher": "^4.3.0",
+                "symfony/expression-language": "^4.3.0",
+                "symfony/http-kernel": "^4.3.0",
+                "symfony/property-access": "^4.3.0",
+                "symfony/security-core": "^4.3.0",
+                "symfony/validator": "^4.3.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.6.0",
+                "doctrine/orm": "^2.6.0",
+                "fxp/cache": "^2.0.0",
+                "fxp/doctrine-extensions": "^2.0.0",
+                "symfony/config": "^4.3.0",
+                "symfony/dependency-injection": "^4.3.0",
+                "symfony/finder": "^4.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fxp\\Component\\Security\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "A Extended Role-Based Access Control with sharing rules",
+            "homepage": "https://github.com/fxpio/fxp-security",
+            "keywords": [
+                "E-RBAC",
+                "permission",
+                "rbac",
+                "security",
+                "sharing"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/francoispluchino",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/francoispluchino",
+                    "type": "github"
+                }
+            ],
+            "time": "2019-10-28T08:25:36+00:00"
+        },
+        {
+            "name": "fxp/security-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxpio/fxp-security-bundle.git",
+                "reference": "6fef3cbfef990f81bde7dec0215ece71e564452b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxpio/fxp-security-bundle/zipball/6fef3cbfef990f81bde7dec0215ece71e564452b",
+                "reference": "6fef3cbfef990f81bde7dec0215ece71e564452b",
+                "shasum": ""
+            },
+            "require": {
+                "fxp/security": "^2.0.0",
+                "php": "^7.1.0",
+                "symfony/framework-bundle": "^4.3.0",
+                "symfony/security-bundle": "^4.3.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^1.9.0",
+                "doctrine/orm": "^2.6.0",
+                "symfony/form": "^4.3.0",
+                "symfony/translation": "^4.3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fxp\\Bundle\\SecurityBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "A Extended Role-Based Access Control with sharing rules",
+            "homepage": "https://github.com/fxpio/fxp-security-bundle",
+            "keywords": [
+                "E-RBAC",
+                "permission",
+                "rbac",
+                "security",
+                "sharing"
+            ],
+            "funding": [
+                {
+                    "url": "https://paypal.me/francoispluchino",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/francoispluchino",
+                    "type": "github"
+                }
+            ],
+            "time": "2019-10-28T08:29:02+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -7052,9 +7320,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "fxp/security-bundle": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1.3",

@@ -6,6 +6,10 @@ doctrine:
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '5.7'
     orm:
+        resolve_target_entities:
+            Fxp\Component\Security\Model\UserInterface: App\Entity\User # the FQCN of your user entity
+            Fxp\Component\Security\Model\RoleInterface: App\Entity\Role # the FQCN of your role entity
+            Fxp\Component\Security\Model\PermissionInterface: App\Entity\Permission # the FQCN of your permission entity
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
